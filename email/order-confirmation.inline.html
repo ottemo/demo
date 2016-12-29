@@ -1,4 +1,4 @@
-<!-- build:5e48c99c7ef499c567abf48cfb0b7812 -->{{ $dateFormat := "Monday, 2 Jan 2006, 3:04pm" }}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- build:c786e750cbfe01cea3719a21433c2201 -->{{ $dateFormat := "Monday, 2 Jan 2006, 3:04pm" }}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -50,7 +50,7 @@
 <table class="twelve columns" style="border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:left;vertical-align:top;width:580px">
 <tr style="padding:0;text-align:left;vertical-align:top">
 <td class="text-pad" style="-moz-hyphens:none;-webkit-hyphens:none;border-collapse:collapse!important;color:#606060;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:24px;margin:0;padding:0 0 10px;padding-left:10px;padding-right:10px;text-align:left;vertical-align:top;word-break:break-word">
-<h5 style="color:#606060;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:600;line-height:1.3;margin:0;padding:0;text-align:left;word-break:normal">Order #{{ .Order._id }}</h5>
+<h5 style="color:#606060;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:600;line-height:1.3;margin:0;padding:0;text-align:left;word-break:normal">Order #{{ .Order.increment_id }}</h5>
 <h5 style="color:#606060;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:600;line-height:1.3;margin:0;padding:0;text-align:left;word-break:normal">Placed On: {{ .Order.created_at.Format $dateFormat }}</h5>
 </td>
 <td class="expander" style="-moz-hyphens:none;-webkit-hyphens:none;border-collapse:collapse!important;color:#606060;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:24px;margin:0;padding:0!important;text-align:left;vertical-align:top;visibility:hidden;width:0;word-break:break-word"></td>

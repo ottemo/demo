@@ -1,4 +1,4 @@
-<!-- build:1109ebdfa3123d2e1936058b7c0dee3f -->{{ $dateFormat := "Jan 2, 2006, 3:04pm" }}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- build:48f8a1b7a60de54044d785ec10c0f5ce -->{{ $dateFormat := "Jan 2, 2006, 3:04pm" }}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -41,9 +41,9 @@
 <li>
 Order {{ if .Order.visitor_id }}
 <a href="{{ .Site.Url }}/account/order/{{ .Order._id }}" style="color:#2ba6cb;text-decoration:none">
-#{{ .Order._id }}
+#{{ .Order.increment_id }}
 </a>
-{{ else }} #{{ .Order._id }} {{ end }}
+{{ else }} #{{ .Order.increment_id }} {{ end }}
 </li>
 <li>Placed On: {{ .Order.created_at.Format $dateFormat }}</li>
 <li>{{ .Order.shipping_info.carrier }}: {{ .Order.shipping_info.tracking_number }}</li>
